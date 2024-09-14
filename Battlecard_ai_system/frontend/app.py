@@ -8,7 +8,7 @@ product_info = st.text_area("Enter Product Info")
 
 if st.button("Generate Battlecard"):
     response = requests.post(
-        "http://127.0.0.0.0:8000/generate_battlecard/",
+        "http://0.0.0.0:8000/generate_battlecard/",
         json={"competitor_name": competitor_name, "product_info": product_info}
     )
     
